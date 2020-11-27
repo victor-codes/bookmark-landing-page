@@ -599,7 +599,7 @@ input[value] {
 }
 
 .nav-footer__container {
-    padding: 24px 16px;
+    padding: 32px;
     background: var(--Very-Dark-Blue);
 }
 
@@ -888,6 +888,7 @@ input[value] {
 @media only screen and (min-width: 769px)and (max-width: 989px) {
     .section__background {
         max-width: 55% !important;
+        left: -140px;
     }
 }
 @media only screen and (min-width: 1300px) {

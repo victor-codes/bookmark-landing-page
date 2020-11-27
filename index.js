@@ -115,5 +115,3 @@ submit.addEventListener("click", (e) => {
 });
 
 email.addEventListener("input", () => { emailValidator(); });
-// document.querySelector('img-1').tabInde;
-// document.querySelector('img-2').tabInde;

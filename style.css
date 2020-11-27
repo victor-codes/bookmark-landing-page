@@ -28,6 +28,7 @@ body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .style__container {
@@ -129,7 +130,7 @@ input[type="submit"]:focus {
 }
 
 main {
-    margin-top: 80px;
+    margin-top: 160px;
     padding: 16px;
 }
 
@@ -227,28 +228,32 @@ section div div button:focus,
 
 .hero__background {
     position: absolute;
-    display: none;
-    /* width: 80%; */
-    top: 320px;
+    height: auto;
+    /* display: none; */
+    width: 80% ;
+    top: 50px;
     /* max-width: 400px; */
-    right: 0;
+    right: -16px;
     z-index: -1;
 }
 
 
 .section__background {
-    display: none;
+    /* display: none; */
     position: absolute;
-    max-width: 100%;
+    max-width: 80%;
+    height: auto;
     /* top: calc(1340px + ((1340px*100%)/1440px)); */
-    top: 1340px;
-    /* top: 1480px; */
-    /* left: -220px; */
+    /* top: 1340px; */
+    top: 40px;
+    left: -16px;
+    /* left: -190px; */
     transform: rotate(-180deg);
     z-index: -10;
 }
 
 .features {
+    position: relative;
     margin-top: 256px;
 }
 
@@ -652,6 +657,9 @@ input[value] {
     .style__container {
         padding: 16px;
     }
+    .marginTop {
+        margin-top: 64px;
+    }
 
     #nav__header .desktop__navbar {
         display: none;
@@ -833,13 +841,6 @@ input[value] {
         display: flex;
         justify-content: center;
     }
-
-    .section__background {
-        height: 200px;
-        top: calc(100% + 630px);
-        /* top: 1750px; */
-    }
-
 }
 
 @media only screen and (max-width: 311px) {
@@ -877,11 +878,24 @@ input[value] {
     .card__container {
         justify-content: space-evenly;
     }
-
+}
+@media only screen and (min-width: 990px) {
     .section__background {
-        top: 1220px;
+        max-width: 55% !important;
+        left: -220px;
     }
-
+}
+@media only screen and (min-width: 769px)and (max-width: 989px) {
+    .section__background {
+        max-width: 55% !important;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    .hero__background {
+        max-width: 155% !important;
+        top: 70px;
+        right: -155px;
+    }
 }
 
 @media only screen and (min-width: 592px)and (max-width: 839px) {
@@ -893,12 +907,10 @@ input[value] {
 @media only screen and (min-width: 769px)and (max-width: 1139px) {
     .hero__svg {
         right: 0;
-
     }
 }
 
 @media only screen and (max-width:980px) {
-
     .tab__child,
     .tab__child,
     .tab__child {
@@ -906,7 +918,6 @@ input[value] {
         align-items: center !important;
         justify-content: center !important;
     }
-
     .tab-copy,
     .tab-copy,
     .tab-copy {

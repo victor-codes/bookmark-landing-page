@@ -6,8 +6,8 @@ const tabCtrl2 = document.querySelector('.tabCtrl2');
 const tabCtrl3 = document.querySelector('.tabCtrl3');
 const submit = document.getElementById('submit');
 const email = document.getElementById('email');
-const hamOpen = document.querySelector('.hamburger')
-const closeNav = document.querySelector('.close')
+const hamOpen = document.querySelector('.hamburger');
+const closeNav = document.querySelector('.close');
 
 closeNav.addEventListener('click', () => {
     document.querySelector('.mobile__navbar__container').style.display = 'none';

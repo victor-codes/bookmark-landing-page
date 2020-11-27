@@ -147,6 +147,7 @@ h6 {
 }
 
 .mobile__navbar__container {
+    overflow-y: scroll;
     display: flex;
     display: none;
     flex-direction: column;
@@ -229,25 +230,19 @@ section div div button:focus,
 .hero__background {
     position: absolute;
     height: auto;
-    /* display: none; */
     width: 80% ;
     top: 50px;
-    /* max-width: 400px; */
     right: -16px;
     z-index: -1;
 }
 
 
 .section__background {
-    /* display: none; */
     position: absolute;
     max-width: 80%;
     height: auto;
-    /* top: calc(1340px + ((1340px*100%)/1440px)); */
-    /* top: 1340px; */
     top: 40px;
     left: -16px;
-    /* left: -190px; */
     transform: rotate(-180deg);
     z-index: -10;
 }
@@ -671,6 +666,7 @@ input[value] {
 
     .mobile__navbar__container {
         display: flex;
+        overflow-y: scroll;
         display: none;
         justify-content: center;
         align-items: center;

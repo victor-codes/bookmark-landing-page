@@ -235,7 +235,9 @@ section div div button:focus,
     z-index: -1;
 }
 
+
 .section__background {
+    display: none;
     position: absolute;
     max-width: 100%;
     /* top: calc(1340px + ((1340px*100%)/1440px)); */

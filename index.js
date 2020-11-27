@@ -87,11 +87,11 @@ function emailValidator() {
 
     if (test.length < 1) {
         setTimeout(() => {
-            errorMessage(log, "Enter a valid email.");
+            errorMessage(log, "Whoops, make sure it's an email.");
         }, 800);
     } else if (test.match(/\s/g)) {
         setTimeout(() => {
-            errorMessage(log, "Email is invalid or already taken.");
+            errorMessage(log, "Whoops, make sure it's an email.");
         }, 800);
     } else if (test.match(match)) {
         setTimeout(() => {
@@ -100,7 +100,7 @@ function emailValidator() {
         return true;
     } else {
         setTimeout(() => {
-            errorMessage(log, "Email is invalid or already taken.");
+            errorMessage(log, "Whoops, make sure it's an email.");
         }, 800);
     }
 }

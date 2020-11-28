@@ -495,11 +495,12 @@ details[open] {
     line-height: 170%;
 }
 
-details[open] summary{
+details[open] summary {
     margin-bottom: 40px;
     padding: 0;
     color: var(--Soft-Red);
 }
+
 details[open] summary p {
     color: var(--Soft-Red);
 }
@@ -640,7 +641,10 @@ input[value] {
 }
 
 .img-1:hover path,
-.img-2:hover path {
+.img-2:hover path,
+.img-1:focus path,
+.img-2:focus path .social__link .img-1:focus,
+.social__link .img-1:focus {
     fill: var(--Soft-Red);
 }
 
@@ -711,6 +715,12 @@ input[value] {
         background: transparent;
         border-color: #ffffff;
         margin: auto !important;
+    }
+
+    .nav__item div button:hover,
+    .nav__item div button:focus {
+        border-color: #e8e8e8;
+        color: #e8e8e8;
     }
 
     .nav__item li:nth-child(1),
